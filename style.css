@@ -2,8 +2,23 @@
     color: white;
 }
 
-p {
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.project-description {
+    word-break: break-word;
+    font-family: "Changa", sans-serif;
+}
+
+#credits {
     text-align: center;
+    font-family: "Changa", sans-serif;
 }
 
 h2 {
@@ -21,11 +36,17 @@ h4 {
     font-size: 60px;
     text-shadow: 0 0 30px rgb(189, 48, 76);
     margin: 10px;
+    margin-bottom: 40px;
 }
 
-#q-title {
+#quote-title {
     font-size: 25px;
     text-shadow: 0 0 30px rgb(48, 100, 189);
+}
+
+#quote {
+    text-align: center;
+    font-family: "Changa", sans-serif;
 }
 
 body {
@@ -37,7 +58,7 @@ body {
     background-blend-mode: darken;
 }
 
-#name-text {
+#name-title {
     text-align: center;
     font-size: 150px;
     color: white;
@@ -45,11 +66,11 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     text-shadow: 0 0 30px rgb(48, 189, 119);
-    animation-name: name-text;
+    animation-name: name-title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    border-radius: 50px;
-    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .section {
@@ -58,22 +79,74 @@ body {
     border-radius: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    transition: background-color 0.4s ease-in-out;
+    overflow: auto;
 }
 
-@keyframes name-text {
+.section:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.4s ease-in-out
+}
+
+@keyframes name-title {
     0% {
         opacity: 0;
         word-spacing: 100px;
-        background-color: rgba(255, 255, 255, 0);
-    }
-    50% {
-        opacity: 1;
-        word-spacing: normal;
-        background-color: rgba(255, 255, 255, 0);
     }
     100% {
         opacity: 1;
-        word-spacing: normal; 
-        background-color: rgba(255, 255, 255, 0.03);
+        word-spacing: normal;
     }
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    border-style: dotted;
+    padding: 20px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 500px;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-decoration: none;
+    border-style: none none solid none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-title:hover {
+    color: rgb(160, 183, 219);
+}
+
+.lang-icon-container {
+    white-space: nowrap;
+}
+
+.lang-icon {
+    vertical-align: middle;
+    height: 100%;
+    width: 30px;
+    text-align: left;
+    margin-left: 20px;
 }

@@ -5,20 +5,62 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=link" />
     </head>
     <body>
-        <h1 id="name-text">d m e 6</h1>
+        <h1 id="name-title">d m e 6</h1>
         <div class="section">
-            <h4 id="q-title" class="section-title">Quote of the Day</h4>
-            <p>Some quote</p>
+            <h4 id="quote-title" class="section-title">Quote of the Day</h4>
+            <p id="quote">“The only true wisdom is in knowing you know nothing.” - Socrates</p>
         </div>
-        <div id="projects" class="section">
+        <div class="section">
             <h2 class="section-title">Projects</h2>
-            <p>Best project ever created</p>
+            <div id="projects">
+                <div class="project">
+                    <div class="project-title-container">
+                        <a href="https://github.com/dme6/Windows-C-Template" target="_blank" class="project-title">Windows C Template <span class="material-symbols-outlined">link</span></a>
+                        <div class="lang-icon-container">
+                            <img class="lang-icon" title="Windows" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"/>
+                            <img class="lang-icon" title="C and Makefile" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"/>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <p class="project-description">A script written in GNU Make that makes it easier to develop large-scale C projects on Windows.</p>
+                        <img class="project-image" src="windows-c-template.png" alt="Windows C Template">
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title-container">
+                        <a href="https://github.com/dme6/Jostle" target="_blank" class="project-title">Jostle <span class="material-symbols-outlined">link</span></a>
+                        <div class="lang-icon-container">
+                            <img class="lang-icon" title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                        </div>
+                    </div>
+                    <p class="project-description">A recreation of an animation technique by PilotRedSun. The way it works is the program selects every fourth pixel in a 1230x720 image, creating a 640x360 image. 3 other unique 360p images can be created as well, which all go into a GIF, which in this case cycles through the frames at I believe I set to be 10 fps.</p>
+                    <img class="project-image" src="jostle.gif" alt="Jostle">
+                </div>
+
+                <div class="project">
+                    <div class="project-title-container">
+                        <a href="https://github.com/dme6/Panama" target="_blank" class="project-title">Panama <span class="material-symbols-outlined">link</span></a>
+                        <div class="lang-icon-container">
+                            <img class="lang-icon" title="C" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                        </div>
+                    </div>
+                    <p class="project-description">A simple message encryptor designed for encrypting and decrypting 7 bit signed ascii. It uses a method which I now recognize to be a Vigenere cipher. This was a project I did with a friend and is useless for actual encryption, although I think it has potential if the key is long enough.</p>
+                    <img style="margin-bottom: 20px;" class="project-image" src="panama_1.png" alt="Panama">
+                    <img class="project-image" src="panama_2.png" alt="Panama">
+                </div>
+            </div>
         </div>
-        <div>
+        <div id="credits">
+            <p>Website by dme6</p>
             <p>Name font by Matt McInerney</p>
             <p>Background by Francesco Ungaro</p>
+            <p>Language icons by Devicon</p>
         </div>
     </body>
 </html>
