@@ -39,12 +39,12 @@ h4 {
     margin-bottom: 40px;
 }
 
-#quote-title {
+#small-title {
     font-size: 25px;
     text-shadow: 0 0 30px rgb(48, 100, 189);
 }
 
-#quote {
+#quote, #contact {
     text-align: center;
     font-family: "Changa", sans-serif;
 }
@@ -80,7 +80,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     transition: background-color 0.4s ease-in-out;
-    overflow: auto;
+    overflow-x: auto;
 }
 
 .section:hover {
@@ -138,6 +138,19 @@ body {
 .project-title:hover {
     color: rgb(160, 183, 219);
 }
+
+.project-date {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-date p {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-family: "Changa", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 .lang-icon-container {
     white-space: nowrap;
