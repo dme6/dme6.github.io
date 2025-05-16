@@ -154,11 +154,12 @@ body {
 
 .lang-icon-container {
     white-space: nowrap;
+    position: relative;
 }
 
 .lang-icon {
-    /* vertical-align: middle; */
-    /* height: 100%; */
+    vertical-align: middle;
+    height: 100%;
     width: 30px;
     text-align: left;
     margin-left: 20px;
