@@ -16,11 +16,6 @@
     font-family: "Changa", sans-serif;
 }
 
-#credits {
-    text-align: center;
-    font-family: "Changa", sans-serif;
-}
-
 h2 {
     text-align: center;
 }
@@ -44,9 +39,39 @@ h4 {
     text-shadow: 0 0 30px rgb(48, 100, 189);
 }
 
-#quote, #contact {
+#quote, #email, #credits {
     text-align: center;
     font-family: "Changa", sans-serif;
+}
+
+.media-links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media-link-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.media-img {
+    width: 30px;
+}
+
+.invert-logo {
+    filter:invert(80%)
+}
+
+.media-link, .media-no-link {
+    margin-left: 10px;
+    font-family: "Changa", sans-serif;
+}
+
+.media-link:hover {
+    color: rgb(160, 183, 219);
 }
 
 body {
